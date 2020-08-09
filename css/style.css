@@ -1,0 +1,93 @@
+body {
+    background: #a3c5a3;
+}
+
+.terrain_de_jeu{
+    margin: 2em auto;
+    height: 500px;
+    width: 650px;
+  
+}
+.square {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(../images/land_1.png);
+    background-position: center;
+    background-size: cover;
+    /* background: #bddfbd; */
+
+
+}
+/* .square:nth-child(even){
+    background: #afdaaf;
+} */
+
+.burger,
+.goal {
+    position: relative;
+}
+
+.burger:before,
+.goal:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    line-height: 50px;
+    font-size: 48px;
+    color: rgb(20, 71, 37);
+}
+
+.burger:before {
+    content: url(../images/burgers.svg);
+    color: #944ac7;
+}
+.goal:before {
+    content: url(../images/37.png);
+}
+
+.square.wall {
+    /* background: #b9a288; */
+    content : url(../images/greenery_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.essai {
+    color: red;
+}
+
+.popUp {
+    width: 22em;
+    height: 10em;
+    background-color: #ffffff;
+    border: 3px solid black;
+    position: absolute;
+    top: 23%;
+    left: 38%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textPopUp {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.button-restart {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.button-restart:hover {
+    background-color: lightgreen;
+}
