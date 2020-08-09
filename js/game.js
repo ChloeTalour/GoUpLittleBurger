@@ -44,7 +44,6 @@ var game = {
     generateMap: function () {
 
         for (y in model) {
-            console.log('mlk', y)
 
             for (let x = 0; x < model[y].length; x++) {
                 let characters = model[y][x] // on prend les lettres
@@ -81,7 +80,6 @@ var game = {
 
         
         if(game.isItFinish === false) {
-            console.log(game.isItFinish);
             game.actualLocalisationForLittleBurger()
             if (event.keyCode === 39) {
                 game.goToTheRightLittleBurger()
@@ -102,7 +100,6 @@ var game = {
     isItGoal: function () {
         goalLocalisation = document.querySelector('.goal');
         burgerLocalisation = document.querySelector('.burger');
-        console.log(burgerLocalisation);
 
         isItGoal = burgerLocalisation.classList.contains('goal');
         if (isItGoal === true) {
