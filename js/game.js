@@ -62,7 +62,7 @@ var game = {
         divElement.classList.add('popUp');
         divElementParent.append(divElement);
         pElement = document.createElement('p');
-        pElement.textContent = 'Catch your food ! Attention ... you\'re not like you\'re thinking'
+        pElement.textContent = 'Catch your food ! Warning ... you\'re not who you think you are'
         pElement.classList.add('textPopUp');
         divElement.append(pElement);
 
